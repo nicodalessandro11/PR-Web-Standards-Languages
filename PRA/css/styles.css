@@ -238,16 +238,42 @@ nav .container {
   gap: 20px;
 }
 
+#experiences .experience-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#experiences .experience-item::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  width: 100%;
+  height: 185px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  border-radius: 10px;
+  z-index: 1;
+}
+
 #experiences .experience-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  position: relative;
 }
 
-#experiences .experience-image {
-  width: 100%;
-  border-radius: 10px;
+#experiences .experience-item:hover img,
+#experiences .experience-item:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 #experiences .experience-item p {
@@ -467,9 +493,37 @@ footer .grid-container {
   grid-gap: 10px;
 }
 
+footer .grid-item {
+  position: relative;
+  overflow: visible;
+}
+
 footer .grid-item img {
   width: 100%;
   height: auto;
+}
+
+footer .grid-item::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+footer .grid-item:hover img,
+footer .grid-item:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 footer .footer-contact {
@@ -562,30 +616,41 @@ footer .email-newsletter form button:hover {
 
 /* -------------------- Hover for Social Icons -------------------------- */
 
-.social-icons:hover i {
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i:hover,
+.social-icons i:focus {
   color: white;
 }
 
-.social-icons:hover i.fa-brands.fa-dribbble {
+.social-icons a:hover .fa-dribbble,
+.social-icons a:focus .fa-dribbble {
   background-color: #ea4c89;
 }
 
-.social-icons:hover i.fa-brands.fa-square-facebook {
+.social-icons a:hover .fa-square-facebook,
+.social-icons a:focus .fa-square-facebook {
   background-color: #3b5998;
 }
 
-.social-icons:hover i.fa-brands.fa-google-plus-g {
+.social-icons a:hover .fa-google-plus-g,
+.social-icons a:focus .fa-google-plus-g {
   background-color: #db4a39;
 }
 
-.social-icons:hover i.fa-brands.fa-linkedin {
+.social-icons a:hover .fa-linkedin,
+.social-icons a:focus .fa-linkedin {
   background-color: #0e76a8;
 }
 
-.social-icons:hover i.fa-brands.fa-twitter {
+.social-icons a:hover .fa-twitter,
+.social-icons a:focus .fa-twitter {
   background-color: #00acee;
 }
 
-.social-icons:hover i.fa-brands.fa-vk {
+.social-icons a:hover .fa-vk,
+.social-icons a:focus .fa-vk {
   background-color: #4e658e;
 }
