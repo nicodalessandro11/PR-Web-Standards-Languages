@@ -29,6 +29,7 @@ nav {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 1000;
+  border-bottom: 1px solid #c43721;
 }
 
 nav .container {
@@ -75,8 +76,14 @@ nav .container {
   color: white;
 }
 
-nav ul li a:active {
+#nav-links #home-button {
   background-color: #c43721;
+  color: white;
+}
+
+#nav-links #home-button:hover,
+#nav-links #home-button:focus {
+  background-color: #ef6d58;
   color: white;
 }
 
@@ -94,7 +101,7 @@ nav ul li a:active {
 /* ------------------------- Presentation Section --------------------- */
 #presentation {
   background: url("../materials/images/header.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 24em;
   display: flex;
   flex-direction: column;
@@ -149,7 +156,7 @@ nav ul li a:active {
 #experiences .experience-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
   gap: 20px;
 }
 
@@ -157,7 +164,7 @@ nav ul li a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 #experiences .experience-image {
@@ -168,6 +175,7 @@ nav ul li a:active {
 #experiences .experience-item p {
   font-size: 14px;
   text-align: center;
+  width: 86%;
 }
 
 #experiences .experience-item a {
@@ -180,6 +188,7 @@ nav ul li a:active {
   border: 1px solid #c43721;
   border-radius: 5px;
   text-align: center;
+  font-weight: bold;
 }
 
 /* ------------------------ Latest Section --------------------- */
@@ -191,6 +200,22 @@ nav ul li a:active {
 #latest-header {
   display: flex;
   justify-content: space-between;
+}
+
+#latest-header a {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #c43721;
+  border: 1px solid #c43721;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 45px;
 }
 
 #latest .latest-container {
@@ -212,7 +237,7 @@ nav ul li a:active {
 }
 
 #latest .latest-article img {
-  width: 50%;
+  width: 250px;
   border-radius: 10px;
 }
 
@@ -226,6 +251,14 @@ nav ul li a:active {
   gap: 15px;
 }
 
+#latest .latest-article-content a {
+  font-size: 25px;
+}
+
+#latest .latest-article-content .read-more {
+  font-size: 20px;
+  font-weight: bold;
+}
 #latest .latest-article-content img {
   width: 20px;
 }
@@ -266,9 +299,10 @@ nav ul li a:active {
 #about-me .about-content .about-content-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 15px;
   width: 70%;
+  padding-top: 15px;
 }
 
 #about-me .about-content .about-content-text h3 {
@@ -315,6 +349,7 @@ nav ul li a:active {
 #help-team .team-member h3 {
   text-align: start;
   font-size: 22px;
+  padding-top: 20px;
 }
 
 #help-team .team-member p {
@@ -334,11 +369,13 @@ footer .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  padding-bottom: 40px;
 }
 
 footer .container h2 {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 10px;
+  font-size: 23px;
 }
 
 footer .gallery {
@@ -362,15 +399,31 @@ footer .footer-contact {
   border-top: 1px solid white;
 }
 
+footer .footer-contact i {
+  color: #829da2;
+}
+
 footer .contact-item {
   width: 25%;
   display: flex;
   padding-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+footer .contact-item i {
+  padding-top: 3px;
 }
 
 footer .contact-data {
   padding-left: 15px;
+}
+
+footer .contact-header {
+  font-weight: bold;
+}
+
+footer .contact {
+  font-size: 14px;
 }
 
 footer .social-container {
@@ -400,16 +453,22 @@ footer .social-icons i {
 footer .email-newsletter form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  height: 35px;
+  gap: 15px;
+  padding-top: 20px;
+  padding-right: 8px;
 }
 
-footer input {
+footer .email-newsletter form input {
   background-color: #829da2;
-  height: 55px;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  opacity: 1;
+  padding-left: 10px;
 }
 
-footer button {
+footer .email-newsletter form button {
   background-color: #e4e4e4;
-  height: 35px;
+  height: 40px;
 }
