@@ -280,8 +280,136 @@ nav ul li a:active {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* ------------------------ About me Section --------------------- */
+
+#help-team {
+  background-color: #e4e4e4;
+}
+
+#help-team .container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#help-team .team-container {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+#help-team .team-member {
+  flex-basis: 23%;
+  text-align: center;
+}
+
+#help-team .team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  align-items: end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#help-team .team-member h3 {
+  text-align: start;
+  font-size: 22px;
+}
+
+#help-team .team-member p {
+  font-size: 1em;
+  text-align: start;
+  font-size: 14px;
+}
+
 /* ------------------------ FOOTER --------------------- */
 
+footer {
+  background-color: #323639;
+  color: #c1c2c4;
+}
+
 footer .container {
-  background-color: grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+footer .container h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+footer .gallery {
+  max-width: 800px;
+  margin: auto;
+}
+
+footer .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+footer .grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+footer .footer-contact {
+  display: flex;
+  border-top: 1px solid white;
+}
+
+footer .contact-item {
+  width: 25%;
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+footer .contact-data {
+  padding-left: 15px;
+}
+
+footer .social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .social-icons i {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+  color: #323639;
+  font-size: 15px;
+  padding: 10px;
+}
+
+footer .email-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 35px;
+}
+
+footer input {
+  background-color: #829da2;
+  height: 55px;
+}
+
+footer button {
+  background-color: #e4e4e4;
+  height: 35px;
 }
