@@ -11,12 +11,90 @@ body {
   font-size: 16px;
 }
 
+/* Hover for links*/
+a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
 /* Container */
 .container {
   width: 100%;
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Glow on Hover */
+.glow-on-hover {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ef6d58,
+    #f47868,
+    #e96048,
+    #ff7a6a,
+    #e65038,
+    #ff6d58,
+    #cc594c,
+    #ff7a6a,
+    #ef6d58
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:hover {
+  color: white;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* ------------------------- Navigation Bar --------------------- */
@@ -471,4 +549,9 @@ footer .email-newsletter form input {
 footer .email-newsletter form button {
   background-color: #e4e4e4;
   height: 40px;
+}
+
+footer .email-newsletter form button:hover {
+  background-color: #323639;
+  color: #829da2;
 }
