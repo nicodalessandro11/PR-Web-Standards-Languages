@@ -165,7 +165,7 @@ nav .container {
   color: white;
 }
 
-#nav-links .active-button {
+#nav-links #home-button {
   background-color: #c43721;
   color: white;
 }
@@ -174,6 +174,307 @@ nav .container {
 #nav-links #home-button:focus {
   background-color: #ef6d58;
   color: white;
+}
+
+/* ------------------------- Presentation Section ----------------------- */
+#presentation {
+  background: url("../materials/images/header.jpg") no-repeat;
+  background-size: cover;
+  height: 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 100;
+  margin-top: 70px;
+}
+
+#presentation .principal {
+  background-color: rgba(103, 103, 103, 90%);
+  border-radius: 8px;
+  padding: 1vw;
+  width: 30vw;
+  color: white;
+  font-family: "Yellowtail", sans-serif;
+  font-size: 50px;
+  margin-top: 30px;
+  height: 250px;
+}
+
+#presentation .principal p {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 40px;
+}
+
+/* ------------------------ Experiences Section ---------------------- */
+
+#experiences {
+  padding: 50px 0;
+}
+
+#experiences h3 {
+  color: black;
+  font-size: 50px;
+}
+
+#experiences .section-text {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#experiences .section-text span {
+  color: #c43721;
+  font-weight: bold;
+}
+#experiences .experience-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+#experiences .experience-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  overflow: visible;
+}
+
+#experiences .experience-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.experience-image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.experience-image-container img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.experience-image-container::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  font-size: 2.5vw;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.experience-image-container:hover img {
+  transform: scale(1.1);
+}
+
+.experience-image-container:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#experiences .experience-item p {
+  font-size: 14px;
+  text-align: center;
+  width: 86%;
+}
+
+#experiences .experience-item a {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px;
+  width: 80%;
+  color: #c43721;
+  background-color: white;
+  border: 1px solid #c43721;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ------------------------ Latest Section --------------------- */
+#latest {
+  background-color: #e4e4e4;
+  padding: 50px 0;
+}
+
+#latest-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#latest-header a {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: #c43721;
+  border: 1px solid #c43721;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 45px;
+}
+
+#latest .latest-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+#latest .latest-article {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+#latest .latest-article:not(:last-child) {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+#latest .latest-article img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+#latest .latest-article a {
+  color: #c43721;
+}
+
+#latest .latest-article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#latest .latest-article-content a {
+  font-size: 25px;
+}
+
+#latest .latest-article-content .read-more {
+  font-size: 20px;
+  font-weight: bold;
+}
+#latest .latest-article-content img {
+  width: 20px;
+}
+
+/* ------------------------ Unlocking Section --------------------- */
+#unlocking {
+  background-color: black;
+  padding: 50px 0;
+}
+
+#unlocking .unlocking-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding-top: 40px;
+}
+
+/* ------------------------ About me Section --------------------- */
+#about-me {
+  background-color: white;
+  padding: 30px 0;
+}
+
+#about-me .section-header span {
+  color: black;
+  font-size: 28px;
+  letter-spacing: 5px;
+  padding-left: 10px;
+}
+
+#about-me .about-content {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+#about-me .about-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+  width: 70%;
+  padding-top: 15px;
+}
+
+#about-me .about-content-text h3 {
+  font-size: 28px;
+}
+
+#about-me .about-content-img img {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------ About me Section --------------------- */
+
+#help-team {
+  background-color: #e4e4e4;
+}
+
+#help-team .container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#help-team .team-container {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+#help-team .team-member {
+  flex-basis: 23%;
+  text-align: center;
+}
+
+#help-team .team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  align-items: end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#help-team .team-member h3 {
+  text-align: start;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+#help-team .team-member p {
+  font-size: 1em;
+  text-align: start;
+  font-size: 14px;
 }
 
 /* ------------------------ FOOTER --------------------- */
