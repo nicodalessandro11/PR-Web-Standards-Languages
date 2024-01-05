@@ -9,7 +9,7 @@ main {
 }
 
 article {
-  flex: 3;
+  flex: 3.2;
   margin-right: 20px;
 }
 
@@ -106,7 +106,7 @@ aside .explore-button-container {
   float: right;
   margin-left: 20px;
   width: 50%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 #web-design .section-text {
@@ -117,13 +117,14 @@ aside .explore-button-container {
 }
 
 #web-design .section-image-text p {
-  padding-bottom: 15px;
-  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 #web-design .section-img img {
   width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #web-design .image-caption {
@@ -150,7 +151,6 @@ aside .explore-button-container {
 
 #web-design .review-content p:first-child {
   font-size: 100px;
-
   margin: 0 auto;
   font-style: italic;
 }
