@@ -2,6 +2,7 @@
 #presentation {
   background: url("../materials/images/header.jpg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 24em;
   display: flex;
   flex-direction: column;

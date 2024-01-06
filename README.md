@@ -147,7 +147,7 @@ The completion of the optional part ("bonus") will be taken into account when aw
 ```text
 Rojo básico (texto, botón menú activo, boton hover, borde botones, etc): #C43721;
 Segundo tono color rojo (hover botones),  : #ef6d58 
-Tercer tono rojo (lateral tabla); #ffd6d1
+Tercer tono rojo (lateral tabla);#ffd6d1 
 Rojo del fondo del bloque de texto de web-design : #fff6f5
 Color fondo texto cabecera: rgb(103, 103, 103) Aplicar la transparencia necesaria
 Color hover imágenes: rgb(132, 131, 131) Aplicar la transparencia necesaria

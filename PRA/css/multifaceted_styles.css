@@ -1,1 +1,100 @@
-/* ------------------------- Section ----------------------- */
+/* ------------------------- Presentation Section ----------------------- */
+#presentation {
+  background: url("../materials/images/inner_header.jpg") no-repeat center
+    center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 100;
+  margin-top: 70px;
+}
+
+#presentation .principal {
+  background-color: rgba(103, 103, 103, 60%);
+  border-radius: 8px;
+  padding: 1vw;
+  width: 30vw;
+  color: white;
+  font-family: "Yellowtail", sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  height: 150px;
+}
+
+#presentation .principal p {
+  font-size: 24px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 5px;
+}
+
+/* ------------------------- Multifaceted Section ----------------------- */
+
+#multifaceted {
+  padding-top: 100px;
+}
+
+#multifaceted h2 {
+  font-size: 43px;
+  padding-right: 100px;
+}
+
+#multifaceted .section-text {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ------------------------- Multifaceted Table Section ----------------------- */
+
+#multifaceted-table {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+#multifaceted-table h3 {
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#multifaceted-table .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+#multifaceted-table .table-head {
+  background-color: #c43721;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border: 1px solid #c43721;
+}
+
+#multifaceted-table .table-title {
+  background-color: #ffd6d1;
+  padding-left: 20px;
+  font-weight: bold;
+  text-align: left;
+  border-left: none;
+}
+
+#multifaceted-table td,
+#multifaceted-table th {
+  width: 25%;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+#multifaceted-table .table-row:nth-child(odd) {
+  background-color: #e4e4e4;
+}
