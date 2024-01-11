@@ -57,7 +57,10 @@
           </h2>
           <div class="content-container">
             <div class="section-img">
-              <img src="./materials/images/blog_article.jpg" alt="" />
+              <img
+                src="./materials/images/blog_article.jpg"
+                alt="People shadow celebrating over the sunrise"
+              />
               <p class="image-caption">A positive and energetic image</p>
             </div>
 
@@ -180,7 +183,10 @@
                   <p class="name-data"><b>By</b> <u>A Name</u></p>
                   <p class="date-data">Friday, 6th April 2045 @08:15:00</p>
                 </div>
-                <img src="./materials/images/avatar.png" alt="avatar" />
+                <img
+                  src="./materials/images/avatar.png"
+                  alt="Image of a representation of a person as an avatar"
+                />
               </div>
               <p class="text-data">
                 This is an example of a comment made on a post. You can either
@@ -196,7 +202,10 @@
                   <p class="name-data"><b>By</b> <u>A Name</u></p>
                   <p class="date-data">Friday, 6th April 2045 @08:15:00</p>
                 </div>
-                <img src="./materials/images/avatar.png" alt="avatar" />
+                <img
+                  src="./materials/images/avatar.png"
+                  alt="Image of a representation of a person as an avatar"
+                />
               </div>
               <p class="text-data">
                 This is an example of a comment made on a post. You can either
@@ -212,7 +221,10 @@
                   <p class="name-data"><b>By</b> <u>A Name</u></p>
                   <p class="date-data">Friday, 6th April 2045 @08:15:00</p>
                 </div>
-                <img src="./materials/images/avatar.png" alt="avatar" />
+                <img
+                  src="./materials/images/avatar.png"
+                  alt="Image of a representation of a person as an avatar"
+                />
               </div>
               <p class="text-data">
                 This is an example of a comment made on a post. You can either
@@ -230,12 +242,12 @@
           <form action="submit" method="post">
             <div class="group-inputs-flex">
               <div class="label-flex">
-                <label for="name">Name*</label>
+                <label for="name">Name<b>*</b></label>
                 <input type="text" id="name" name="name" required />
               </div>
 
               <div class="label-flex">
-                <label for="email">Mail*</label>
+                <label for="email">Mail<b>*</b></label>
                 <input type="email" id="email" name="email" required />
               </div>
 
@@ -249,15 +261,24 @@
               <div class="label-flex">
                 <label for="profile">Your Profile</label>
                 <select id="profile" name="profile">
-                  <option value="opcion1">Opción 1</option>
-                  <option value="opcion2">Opción 2</option>
-                  <option value="opcion3">Opción 3</option>
+                  <optgroup label="Of a company">
+                    <option value="hr-director">
+                      Human Resources Director
+                    </option>
+                    <option value="design-area">Design Area</option>
+                    <option value="development-area">Development Area</option>
+                    <option value="other-company">Others</option>
+                  </optgroup>
+                  <optgroup label="Personal">
+                    <option value="designer">Designer</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="other-personal">Others</option>
+                  </optgroup>
                 </select>
               </div>
-
               <div class="label-flex">
-                <label for="image">Your image</label>
-                <input type="file" id="image" name="image" />
+                <label for="image">Your image<b>*</b></label>
+                <input type="file" id="image" name="image" required />
               </div>
             </div>
 
@@ -272,8 +293,8 @@
             </div>
 
             <div class="btn">
-              <button>Submit Form</button>
-              <button>Reset Form</button>
+              <button type="submit">Submit Form</button>
+              <button type="reset" value="Reset Form">Reset Form</button>
             </div>
           </form>
         </section>
