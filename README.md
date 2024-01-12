@@ -143,26 +143,3 @@ The submission deadline is January 12th at 23:59 hours.
 The completion of the optional part ("bonus") will be taken into account when awarding the honor roll grade.
 
 ---
-
-```text
-Rojo básico (texto, botón menú activo, boton hover, borde botones, etc): #C43721;
-Segundo tono color rojo (hover botones),  : #ef6d58 
-Tercer tono rojo (lateral tabla);#ffd6d1 
-Rojo del fondo del bloque de texto de web-design : #fff6f5
-Color fondo texto cabecera: rgb(103, 103, 103) Aplicar la transparencia necesaria
-Color hover imágenes: rgb(132, 131, 131) Aplicar la transparencia necesaria
-Fondo gris claro (fondos, fondo tabla, color del menú redes sociales, etc): #e4e4e4
-Fondo pie de página: #323639
-Texto pie de página: #C1C2C4
-Color de los input del pie de página: #829DA2
-Color botones explore more de web-design: #474747
-Verde hover botón enviar comentario: #189232
-Rojo hover botón reset comentario: #ff0000
-Colores hover botones redes sociales: 
-● dribbler: #EA4C89;
-● facebook: #3B5998;
-● google-plus: #DB4A39;
-● linkedin: #0E76A8;
-● twitter: #00ACEE;
-● vk: #4E658E;
-```
